@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container my-5">
+			<h1 class="mb-5">Calculator</h1>
+			<div class="col-md-4 mx-auto">
+				<div class="card">
+					<div class="card-body">
+						<input class="form-control mb-5" id="display" value="0" readonly>
+						<div class="row mb-5">
+							<div class="col-3">
+								<button class="btn btn-danger w-100" onclick="clearDisplay()">Clear</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-danger w-100" onclick="undoDisplay()">Undo</button>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(7)">7</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(8)">8</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(9)">9</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-secondary w-100" onclick="addToDisplay('/')">/</button>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(4)">4</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(5)">5</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(6)">6</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-secondary w-100" onclick="addToDisplay('*')">*</button>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(1)">1</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(2)">2</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(3)">3</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-secondary w-100" onclick="addToDisplay('-')">-</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay(0)">0</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-primary w-100" onclick="addToDisplay('.')">.</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-success w-100" onclick="calculateDisplay()">=</button>
+							</div>
+							<div class="col-3">
+								<button class="btn btn-secondary w-100" onclick="addToDisplay('+')">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5">
+				<small>Developed by <a href="https://robertd.co.uk">Robert Dixon</a>.</small>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
